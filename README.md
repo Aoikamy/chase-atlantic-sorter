@@ -1,6 +1,6 @@
 Hey angels ! I created this website to help find out which Chase Atlantic songs are your favorites ! 
 I wanted you to know that I've never created a website before and that I used IA to help me. 
-If I forgot anything or if you notice a mistake feel free to contact me : @aoikamy_.
+If I forgot anything or if you notice a mistake feel free to contact me on instagram : @aoikamy_.
 
 
 🖥️ How to use
