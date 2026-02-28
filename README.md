@@ -10,5 +10,7 @@ If I forgot anything or if you notice a mistake feel free to contact me : @aoika
 4. After the set number of comparisons, your Top 10 and full ranking will appear.
 5. Share your results or restart the sorter anytime!
 
+The background image is from @riyabha on Pinterest
+
 📄 License
 This project is for personal and educational use.
