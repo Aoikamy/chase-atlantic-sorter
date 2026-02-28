@@ -1,0 +1,254 @@
+/* --- GENERAL --- */
+body {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.8)),
+              url('images/chase_atlantic.jpg') no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* --- BUTTONS --- */
+button {
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Start button on home page */
+#start-btn {
+  width: 180px;
+  max-width: 80%;
+  padding: 12px 0;
+  font-size: 16px;
+  background: white;
+  color: black;
+  margin-top: 20px;
+  position: static; /* ensures it's centered in home page */
+}
+
+/* Skip button */
+#skip-btn {
+  width: auto;
+  padding: 10px 20px;
+  font-size: 14px;
+  background: #888;
+  color: white;
+  margin-top: 15px;
+}
+
+#skip-btn:hover {
+  background: #aaa;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+/* --- HOME PAGE --- */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.home-page h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.home-page p {
+  font-size: 18px;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+/* --- SORTER --- */
+.choice-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.choice {
+  width: 90%;
+  max-width: 320px;
+  margin: 15px auto;
+}
+.choice-btn {
+  position: relative;
+  display: block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.choice-btn img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  object-fit: cover;
+}
+
+.choice-btn span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 0;
+  background: rgba(0,0,0,0.4);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* --- PROGRESS BAR --- */
+.progress-container {
+  width: 100%;
+  max-width: 500px;
+  height: 10px;
+  background: #2a2a2a;
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background: white;
+}
+
+#progress-text {
+  margin-bottom: 20px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* --- RESULTS --- */
+.result-card,
+.top-card {
+  text-align: center;
+  border-radius: 14px;
+}
+
+/* Top 10 songs */
+.top-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.top-card {
+  background: #ffffff;
+  color: black;
+  padding: 10px;
+}
+
+.top-card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Full ranking */
+.ranking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 12px;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+.result-card {
+  background: #1c1c1c;
+  padding: 8px;
+  color: white;
+}
+
+.result-card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.rank {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.actions {
+  margin: 30px auto;
+  max-width: 400px;
+}
+
+/* Small phones (max-width: 500px) */
+@media (max-width: 500px) {
+  /* Shrink headings */
+  h1 {
+    font-size: 24px;
+  }
+  
+  .home-page p {
+    font-size: 16px;
+  }
+
+  /* Make song choices slightly smaller */
+  .choice {
+    width: 95%;
+    max-width: 280px;
+  }
+
+  /* Make overlay text slightly smaller */
+  .choice-btn span {
+    font-size: 16px;
+    padding: 6px 0;
+  }
+
+  /* Progress text smaller */
+  #progress-text {
+    font-size: 12px;
+  }
+
+  /* Top 10 / full ranking grids smaller gaps */
+  .top-grid, .ranking-grid {
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  /* Buttons touch-friendly */
+  #start-btn, #skip-btn {
+    font-size: 14px;
+    padding: 12px 0;
+  }
+}
+
+/* Medium phones / tablets (501px – 768px) */
+@media (min-width: 501px) and (max-width: 768px) {
+  .choice {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .choice-btn span {
+    font-size: 17px;
+    padding: 7px 0;
+  }
+}

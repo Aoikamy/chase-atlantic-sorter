@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chase Atlantic Song Sorter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HOME PAGE -->
+<div class="home-page">
+  <h1>Welcome to the Chase Atlantic Song Sorter!</h1>
+  <p>Find out which songs are your ultimate favorites by comparing them two at a time.</p>
+  <button id="start-btn">Start Sorting</button>
+</div>
+
+<!-- SORTER PAGE -->
+<div class="app" style="display: none;">
+  <h1>Which song do you prefer?</h1>
+
+  <div class="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+
+  <p id="progress-text"></p>
+
+  <div class="choice-container">
+    <div class="choice">
+      <button class="choice-btn" id="choice1">
+        <img id="img1">
+        <span id="song1"></span>
+      </button>
+    </div>
+
+    <div class="choice">
+      <button class="choice-btn" id="choice2">
+        <img id="img2">
+        <span id="song2"></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button id="skip-btn">Can't choose</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
